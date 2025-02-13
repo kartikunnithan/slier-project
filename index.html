@@ -34,66 +34,42 @@
             background-color: yellowgreen;
             color: darkcyan;
         }
+
+        body {
+            background-color: red;
+            font-size: 25px
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            background-color: blue;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <div class="topnav"></div>
+    <div class="topnav">
+        <a class="active" href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="contactme.html">contact me</a>
         <a href="gallery.html">Gallery</a>
     </div>
     <div>
-        <section>
-            <img class="myclass" src="https://www.sportspro.com/wp-content/uploads/2024/05/News-story-template-8-1.jpg"
-                style="height:500px;">
-            <img class="myclass"
-                src="https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27b8d043-118c-4a00-affd-08fe0f015512_1200x675.jpeg"
-                style="height:500px;">
-            <img class="myclass"
-                src="https://www.aljazeera.com/wp-content/uploads/2024/09/GettyImages-2172707586-1726914169.jpg?resize=1800%2C1800"
-                style="height:500px;width:500px;">
-            <img class="myclass" src="https://www.mpl.live/blog/wp-content/uploads/2023/10/Real-Madrid.webp"
-                style="height:500px;">
-            <section>
-                <img class="myclass"
-                    src="https://www.sportspro.com/wp-content/uploads/2024/05/News-story-template-8-1.jpg"
-                    style="height:500px;">
-                <img class="myclass"
-                    src="https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27b8d043-118c-4a00-affd-08fe0f015512_1200x675.jpeg"
-                    style="height:500px;">
-                <img class="myclass"
-                    src="https://www.aljazeera.com/wp-content/uploads/2024/09/GettyImages-2172707586-1726914169.jpg?resize=1800%2C1800"
-                    style="height:500px;width:500px;">
-                <img class="myclass" src="https://s.hs-data.com/bilder/spieler/gross/174182.jpg" style="height:500px;">
-                <img class="myclass"
-                    src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/portals/realmadrid-com/es-es/news/generic/2024/08/25/(fut)-rm-valladolid-liga-j2/fotos/ND-LIGA-J02-RM-VALLADOLID-ALEGRIA-VALVERDE-ARDA-RODRYGO-ALEGRIA-VALVERDE-03_AV48491.JPG"
-                    style="height:500px;">
-                <img class="myclass" src="https://www.mpl.live/blog/wp-content/uploads/2023/10/Real-Madrid.webp"
-                    style="height:500px;">
 
+        <h1>Welcome to the real madrid home page</h1>
+        <img class="myclass" src="https://1000logos.net/wp-content/uploads/2020/09/Real-Madrid-logo.png"
+            style="height:400px;">
+        <P>This website is primarily for real madrid fans and for those who want to knwow about this famous club! </P>
+        <br><br>
+        <div class="footer">
+            <p>@copy all rights and reserved by Kartik Unnithan</p>
 
-
-            </section>
-            <script>
-                var myIndex = 0;
-                carousel();
-
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("myclass");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    myIndex++;
-                    if (myIndex > x.length) { myIndex = 1 }
-                    x[myIndex - 1].style.display = "block";
-                    setTimeout(carousel, 3000);
-
-                }
-            </script>
-
-
-            }
-            </script>
+            <P>YOU CAN REACH OUT TO ME ON 54678932</P>
+        </div>
     </div>
 </body>
 
