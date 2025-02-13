@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvatica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .topnav a {
+            float: left;
+            color: deeppink;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: blueviolet;
+            color: deepskyblue;
+        }
+
+        .topnav a.active {
+            background-color: yellowgreen;
+            color: darkcyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav"></div>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    <div>
+        <section>
+            <img class="myclass" src="https://www.sportspro.com/wp-content/uploads/2024/05/News-story-template-8-1.jpg"
+                style="height:500px;">
+            <img class="myclass"
+                src="https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27b8d043-118c-4a00-affd-08fe0f015512_1200x675.jpeg"
+                style="height:500px;">
+            <img class="myclass"
+                src="https://www.aljazeera.com/wp-content/uploads/2024/09/GettyImages-2172707586-1726914169.jpg?resize=1800%2C1800"
+                style="height:500px;width:500px;">
+            <img class="myclass" src="https://www.mpl.live/blog/wp-content/uploads/2023/10/Real-Madrid.webp"
+                style="height:500px;">
+            <section>
+                <img class="myclass"
+                    src="https://www.sportspro.com/wp-content/uploads/2024/05/News-story-template-8-1.jpg"
+                    style="height:500px;">
+                <img class="myclass"
+                    src="https://substackcdn.com/image/fetch/w_1200,h_600,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F27b8d043-118c-4a00-affd-08fe0f015512_1200x675.jpeg"
+                    style="height:500px;">
+                <img class="myclass"
+                    src="https://www.aljazeera.com/wp-content/uploads/2024/09/GettyImages-2172707586-1726914169.jpg?resize=1800%2C1800"
+                    style="height:500px;width:500px;">
+                <img class="myclass" src="https://s.hs-data.com/bilder/spieler/gross/174182.jpg" style="height:500px;">
+                <img class="myclass"
+                    src="https://publish-p47754-e237306.adobeaemcloud.com/content/dam/portals/realmadrid-com/es-es/news/generic/2024/08/25/(fut)-rm-valladolid-liga-j2/fotos/ND-LIGA-J02-RM-VALLADOLID-ALEGRIA-VALVERDE-ARDA-RODRYGO-ALEGRIA-VALVERDE-03_AV48491.JPG"
+                    style="height:500px;">
+                <img class="myclass" src="https://www.mpl.live/blog/wp-content/uploads/2023/10/Real-Madrid.webp"
+                    style="height:500px;">
+
+
+
+            </section>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("myclass");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000);
+
+                }
+            </script>
+
+
+            }
+            </script>
+    </div>
+</body>
+
+</html>
